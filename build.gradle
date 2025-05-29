@@ -10,12 +10,7 @@ version = '1'
 
 allprojects {
 
-//	configurations {
-//		compileOnly {
-//			extendsFrom annotationProcessor
-//		}
-//	}
-//
+
 	repositories {
 		mavenCentral()
 	}
@@ -45,4 +40,10 @@ allprojects {
 	}
 }
 
-
+sourceSets {
+	test {
+		java {
+			srcDirs = ['src/test/java']
+		}
+	}
+}
